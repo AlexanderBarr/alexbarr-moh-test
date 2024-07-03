@@ -18,20 +18,30 @@ The objective of this test is to evaluate the candidate's proficiency in Angular
 - React: React is acceptable, If you choose React, create a new React project, copy the data structure from data.ts, and implement the table rendering logic using React components. Ensure your solution includes all necessary dependencies and setup instructions in the README.md
 
 ### Assessment Criteria:
+TL;DR render a table based on given data as the screenshot below:
+![image](https://github.com/yeweinan/moh-test/assets/8102308/e352b690-3c0b-4783-8dfa-d7293e7a8d27)
 
 - A complete Angular component (`TableRendererComponent`) that dynamically renders a table based on `TableData`.
-- Integration of the component into a parent component (`AppComponent` or similar) where `mockData` is provided.
+- Integration of the component into a parent component (`AppComponent` or similar) where `tableData` is provided.
 - Ensure the table displays data accurately according to the configuration in `TableData.header`.
 - Utilize Angular features such as `*ngFor`, and data binding to render `TableData` dynamically.
-- Accuracy in displaying data based on `TableData.header` configuration.
 - Handling of different UI types (`text`, `dropdown`, `dateTime`, `input`) as specified in `TableData.header`.
 - Code readability, organization, and adherence to Angular best practices.
 - Basic styling of the rendered table and presents data clearly.
 
+### UI Types Explanation:
+- **`text`:** Renders plain text in the table cell.
+- **`input`:** Displays a text input field in the table cell.
+- **`dropdown`:** Renders a dropdown menu in the table cell, populated with options defined in `TableData.header`. Each row's value is pre-selected.
+- **`dateTime`:** Displays date and time in text format respecting the specified date format (`dd/MM/YYYY` or `dd/MM/YYYY hh:mm`) in `TableData.header`.
+
 ### Documentation and Best Practices:
 
 - Use descriptive variable and function names.
-- Provide meaningful git history of each major step
-- Correctly use the type narrowing of the TypeScript (https://www.typescriptlang.org/docs/handbook/2/narrowing.html) instead of type casting, NEVER use (any) annotation
+- Provide meaningful git history of each major steps
+- Correctly use the type narrowing of the TypeScript (https://www.typescriptlang.org/docs/handbook/2/narrowing.html) instead of type casting, **NEVER** use (any) annotation
 
 ### How to submit your result:
+
+
+
