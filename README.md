@@ -46,7 +46,9 @@ TL;DR render a table based on given data as the screenshot below:
     (Make sure it is private)
  2. Clone this repository.
  3. Set the remote url to your own repo
+    ```
     git remote set-url origin `<your_repo_url>`
-    git push
- 4. Coding
- 5. Share the access of your repo as adding a collaborators (https://github.com/<yourusername>/<your_repo>/settings/access) to the user that mentioned in the email and reply
+    git push   
+    ```
+ 5. Coding
+ 6. Share the access of your repo as adding a collaborators (https://github.com/<yourusername>/<your_repo>/settings/access) to the user that mentioned in the email and reply
