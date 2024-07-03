@@ -42,6 +42,11 @@ TL;DR render a table based on given data as the screenshot below:
 - Correctly use the type narrowing of the TypeScript (https://www.typescriptlang.org/docs/handbook/2/narrowing.html) instead of type casting, **NEVER** use (any) annotation
 
 ### How to submit your result:
-
-
-
+ 1. [Create a new private repository on Github](https://help.github.com/articles/creating-a-new-repository/) and name it `yourname-moh-test`.
+    (Make sure it is private)
+ 2. Clone this repository.
+ 3. Set the remote url to your own repo
+    git remote set-url origin `<your_repo_url>`
+    git push
+ 4. Coding
+ 5. Share the access of your repo as adding a collaborators (https://github.com/<yourusername>/<your_repo>/settings/access) to the user that mentioned in the email and reply
