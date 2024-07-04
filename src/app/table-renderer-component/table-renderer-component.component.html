@@ -1,0 +1,24 @@
+<table>
+    <thead>
+      <tr>
+        <th *ngFor="let key of headerKeys" class="center-text">{{ tableData.header[key].name }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of tableData.rows">
+        <td *ngFor="let key of headerKeys">
+          <ng-container [ngSwitch]="tableData.header[key].uiType">
+            <span *ngSwitchCase="'text'">{{ row[key] }}</span>
+            <input *ngSwitchCase="'input'" [(ngModel)]="row[key]" />
+            <select *ngSwitchCase="'dropdown'" [(ngModel)]="row[key]">
+              <option *ngFor="let option of getOptions(key)" [value]="option.value">
+                {{ option.displayText }}
+              </option>
+            </select>
+            <span *ngSwitchCase="'dateTime'">{{ row[key] | date: getDateFormat(key) }}</span>
+          </ng-container>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  

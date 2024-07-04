@@ -1,3 +1,9 @@
 <h1>{{ title }}</h1>
 
-We need a table here:
+<!-- Passing hardcoded table data -->
+<ng-container *ngIf="tableData">
+    <app-table-renderer-component [tableData]="tableData"></app-table-renderer-component>
+  </ng-container>
+
+  <!-- Conditional loading support -->
+  <div *ngIf="!tableData">Loading...</div>

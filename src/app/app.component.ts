@@ -3,13 +3,15 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DataService } from '../data/data';
 import { TableData } from '../data/table';
+import { TableRendererComponent } from './table-renderer-component/table-renderer-component.component';
 
+//TableRendererComponent is my customer table
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NgFor, NgIf, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
+  imports: [NgFor, NgIf, FormsModule, TableRendererComponent],
 })
 export class AppComponent {
   title = 'MOH Test';

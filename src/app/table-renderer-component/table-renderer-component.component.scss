@@ -1,0 +1,34 @@
+/* Custom styling for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  input, select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  
+.center-text {
+    text-align: center;
+  }
